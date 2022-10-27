@@ -1,0 +1,15 @@
+.card-items {
+    border: 1px solid black;
+    width: 40%;
+    height: fit-content;
+    padding-left: 10px;
+    border-radius: 5%;
+    line-height: 1;
+  }
+  select {
+    margin-bottom: 5px;
+  }
+  #status {
+    border-bottom: 2px solid black;
+    width: 80%;
+  }
