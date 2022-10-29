@@ -18,20 +18,20 @@ function App() {
         <div className="handle-card">
           <div className="container">
             <Card status="New" />
-            <Card status="Doing" />
-            <Card status="Done" />
+            <Card status="New" />
+            <Card status="New" />
             <Card status="New" />
           </div>
           <div className="container">
             <Card status="New" />
-            <Card status="Doing" />
-            <Card status="Done" />
+            <Card status="New" />
+            <Card status="New" />
             <Card status="New" />
           </div>
           <div className="container">
             <Card status="New" />
-            <Card status="Doing" />
-            <Card status="Done" />
+            <Card status="New" />
+            <Card status="New" />
             <Card status="New" />
           </div>
         </div>
