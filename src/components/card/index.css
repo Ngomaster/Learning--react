@@ -6,8 +6,12 @@
     border-radius: 5%;
     line-height: 1;
   }
+  option {
+    color: blue;
+  }
   select {
     margin-bottom: 5px;
+    color: brown;
   }
   #status {
     border-bottom: 2px solid black;

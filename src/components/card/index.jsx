@@ -18,9 +18,9 @@ function Card({ status }) {
             <h4>Description: </h4>
             <p>This is a task,This is a task,This is a task,This is a task... </p>
             <select name="" id="" onChange={change}>
-                <option value="NEW">NEW</option>
-                <option value="DOING">DOING</option>
-                <option value="DONE">DONE</option>
+                <option value="New">New</option>
+                <option value="Doing">Doing</option>
+                <option value="Done">Done</option>
             </select>
             
         </div>
