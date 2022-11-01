@@ -10,7 +10,7 @@ function Card({ status }) {
      setSelects(a.target.value);
   };
   return (
-    <div>
+    <>
         <div className="card-items">
             <h3 className="card-title">title: Task 1</h3>
             <p className="card-text">creator: Author 1 </p>
@@ -24,7 +24,7 @@ function Card({ status }) {
             </select>
             
         </div>
-    </div>
+    </>
   );
 }
 

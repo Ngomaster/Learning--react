@@ -3,7 +3,8 @@ import "./App.css";
 import Card from "./components/card";
 import Head from "./components/Header/head";
 import Sidebar from "./components/sidebar/sidebar";
-import Footer from "./components/footer/footer";
+// import Footer from "./components/footer/footer";
+import Form from "./components/New";
 
 function App() {
   return (
@@ -16,7 +17,15 @@ function App() {
           <Sidebar />
         </div>
         <div className="handle-card">
-          <div className="container">
+          <Form />
+          {/* <div className="container"> */}
+          {/* <Card status="New" />
+            <Card status="New" />
+            <Card status="New" />
+            <Card status="New" /> */}
+          {/* <Form /> */}
+          {/* </div> */}
+          {/* <div className="container">
             <Card status="New" />
             <Card status="New" />
             <Card status="New" />
@@ -27,18 +36,13 @@ function App() {
             <Card status="New" />
             <Card status="New" />
             <Card status="New" />
-          </div>
-          <div className="container">
-            <Card status="New" />
-            <Card status="New" />
-            <Card status="New" />
-            <Card status="New" />
-          </div>
+          </div> */}
         </div>
       </div>
-      <div className="Foot">
-        <Footer />
-      </div>
+
+      {/* <div className="Foot">
+          <Footer />
+        </div> */}
     </div>
   );
 }
