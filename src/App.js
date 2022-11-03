@@ -5,6 +5,7 @@ import Head from "./components/Header/head";
 import Sidebar from "./components/sidebar/sidebar";
 // import Footer from "./components/footer/footer";
 import Form from "./components/New";
+import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -18,6 +19,13 @@ function App() {
         </div>
         <div className="handle-card">
           <Form />
+          <BrowserRouter>
+            <Routes>
+              <Route path="/home" element={<Sidebar />} />
+              <Route path="/form" element={<Form />} />
+            </Routes>
+          </BrowserRouter>
+
           {/* <div className="container"> */}
           {/* <Card status="New" />
             <Card status="New" />

@@ -1,75 +1,57 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import "./index.css";
-// Form.propTypes = {
-    
-// };
 
-class Form extends React.Component {
-    state = {
+function Form() {
+  const [formindex, setFormindex] = useState({
       Title: "",
       Creator: "",
       Description: "",
-    };
-    handleTitle = (e) => {
-      this.setState({
-        Title: e.target.value,
-      });
-    };
-    handleCreator = (e) => {
-      this.setState({
-        Creator: e.target.value,
-      });}
-    handleDescription = (e) => {
-      this.setState({
-        Description: e.target.value,
-      });
-    };
-    arr = [this.state];
-    
-    handleSubmit = (e) => {
-      e.preventDefault();
-      alert("submit done");
-      localStorage.setItem('users', JSON.stringify(this.arr))
-    };
+      status: "new"
+  });
+
+  function handlechangeform(e) {
+    setFormindex({
+      ...formindex, [e.target.name]:e.target.value,
+    });
+  }
   
-    render() {
-      console.log(`call state: `, this.state);
+  // let arr =[];
+  function handleCreateTask(event) {
+    event.preventDefault();
+    let arr = JSON.parse(localStorage.getItem('todoList'));
+    arr.push(formindex);
+        localStorage.setItem('todoList', JSON.stringify(arr));
+      }
+    
       return (
-        <>
-          <form>
-            <label htmlFor="title">Title:</label>
-            <br />
+        <div>
+          <form >
+            <label htmlFor="title">Title:</label><br/>
             <input
+              name="title"
+              onChange={handlechangeform}
               type="text"
-              value={this.state.Title}
-              onChange={(e) => this.handleTitle(e)}
+              id="title"
             />
             <br />
-            <label htmlFor="creator">Creator:</label>
-            <br />
-            <input
-              type="text"
-              value={this.state.Creator}
-              onChange={(e) => this.handleCreator(e)}
-            /><br/>
-            <label htmlFor='description'>Description:</label>
-            <br/>
-            <input type="text" value={this.state.Description}
-            onChange={(e) => this.handleDescription(e)}
-            /> 
-            <br />
-            <br />
-            <input
-              type="submit"
-              value="Save"
-              onClick={(e) => this.handleSubmit(e)}
-            />
+            <label htmlFor="creator">Creator:</label><br/>
+            <input name="creator" onChange={handlechangeform} type="text" /><br/>
+            <label htmlFor="desc">Description:</label><br/>
+            <input name="decs" onChange={handlechangeform} type="text" />
+            <br /><br/>
+            <button type="submit" onClick={handleCreateTask}>Save</button>
           </form>
-        </>
+        </div>
       );
-    };
-  };
-export default Form
+    }
+    
+    export default Form;
+
+  
+
+
+
+
 
 
