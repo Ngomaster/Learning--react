@@ -1,0 +1,16 @@
+{
+  "map": [
+    {
+      "id": 1,
+      "name": "ronaldo",
+      "image": "https://nld.mediacdn.vn/291774122806476800/2022/7/26/hinh-3-16588045625731888728193.jpeg",
+      "price": 1000
+    },
+    {
+      "id": 1,
+      "name": "ronaldo",
+      "image": "https://nld.mediacdn.vn/291774122806476800/2022/7/26/hinh-3-16588045625731888728193.jpeg",
+      "price": 1000
+    }
+  ]
+}

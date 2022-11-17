@@ -1,0 +1,31 @@
+.Home-Container{
+    border: 1px solid white;
+    width: 400px;
+    margin: 0 auto;
+    .Home-Item{
+        justify-content: center;
+        margin-top: 10px;
+        
+
+        
+        display: flex;
+        
+        label {
+            text-align: left;
+            width: 100px;
+        }
+
+    }
+    .Home-Button {
+        margin-top: 10px;
+        justify-content: center;
+        display: flex;
+        button {
+            // width: 60px;
+            // margin-left: 50px;
+            height: 30px;
+            margin-bottom: 30px;
+            
+        }
+    }
+}
